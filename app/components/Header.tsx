@@ -14,10 +14,6 @@ export default function Header() {
     router.push('/')
   }
 
-  const gotLogin = () => {
-    router.push('/phone')
-  }
-
   return (
     <div className=" shadow-sm">
       {/* Top Header */}
@@ -127,7 +123,7 @@ export default function Header() {
             </button>
 
             {/* Login Button */}
-            <button onClick={gotLogin} className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 font-semibold rounded-lg shadow-md transition-all duration-200 hover:shadow-lg">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 font-semibold rounded-lg shadow-md transition-all duration-200 hover:shadow-lg">
               Kirish
             </button>
           </div>

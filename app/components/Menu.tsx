@@ -8,6 +8,8 @@ const sections = [
     { id: 'pitsa', label: 'Pitsa' },
     { id: 'gazaklar', label: 'Gazaklar' },
     { id: 'ichimliklar', label: 'Ichimliklar' },
+    {id: 'salatlar', label: 'Salatlar'},
+    { id: 'desertlar', label: 'Desertlar' },
 ];
 
 const tabs = ['Yetkazib berish', 'Olib ketish'];
@@ -137,7 +139,7 @@ export default function Menu() {
                     <div key={id} id={id} className="scroll-mt-24">
                         <h2 className="text-2xl font-bold mb-4">{label}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                            {Array.from({ length: 6 }).map((_, i) => (
+                            {Array.from({ length: 25 }).map((_, i) => (
                                 <div onClick={goToDetails} key={i} className="bg-white p-4 rounded-lg shadow">
                                     <div className="h-32 bg-gray-200 mb-2 rounded" />
                                     <div className="font-semibold text-lg">{label} mahsuloti #{i + 1}</div>
